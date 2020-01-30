@@ -84,6 +84,7 @@ public class ArtistController {
                                      @RequestBody String json) {
         User user = sessionService.getSessionByToken(token);
         System.out.println((json));
+        log.warning("Ilie a fost aici");
         if (user != null) {
             final ObjectMapper objectMapper = new ObjectMapper();
             ArtistPOJO artistPOJO;
